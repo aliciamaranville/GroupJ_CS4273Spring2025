@@ -39,9 +39,7 @@ Weekly progress update meetings with mentor - Thursdays 2-2:30p via Microsoft Te
 
 1. Make sure you have access to the OU DISC SMART misinformation repo
 2. Navigate to the repo page and click the green code button and copy the url
-3. Navigate to your IDE terminal and run
-    'git clone url'
-where url is the copied url from step 2
+3. Navigate to your IDE terminal and run ```git clone url``` where url is the copied url from step 2
 5. Now in order to run the code a virtual environment will be needed and the libraries downloaded
 6. Navigate to the cloned repo and run 'python3 -m venv <name_of_virtual_environment>' this will create the virtual environment
 7. Run 'source <name_of_virtual_environment>/bin/activate' to activate the virtual environment.
