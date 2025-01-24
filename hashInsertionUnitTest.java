@@ -1,25 +1,33 @@
-import unittest
+import static org.junit.Assert.*;
+import org.junit.Test;
+import java.util.HashMap;
 
-class TestHashMap(unittest.TestCase):
-    
-    # Test to add a simple element
-    def test_add_element(self):
-        hashmap = {}
-        hashmap["key1"] = "value1"
-        self.assertEqual(hashmap["key1"], "value1")
+public class HashMapTest {
 
-    # Edge case: Overwriting an existing key
-    def test_overwrite_element(self):
-        hashmap = {}
-        hashmap["key1"] = "value1"
-        hashmap["key1"] = "newValue"
-        self.assertEqual(hashmap["key1"], "newValue")
-    # Edge case: Handling a large number of elements
-    def test_large_number_of_elements(self):
-        hashmap = {}
-        for i in range(10000):
-            hashmap[f"key{i}"] = f"value{i}"
-        self.assertEqual(len(hashmap), 10000)
-    
-if __name__ == "__main__":
-    unittest.main()
+    // Test to add a simple element
+    @Test
+    public void testAddElement() {
+        HashMap<String, String> hashmap = new HashMap<>();
+        hashmap.put("key1", "value1");
+        assertEquals("value1", hashmap.get("key1"));
+    }
+
+    // Edge case: Overwriting an existing key
+    @Test
+    public void testOverwriteElement() {
+        HashMap<String, String> hashmap = new HashMap<>();
+        hashmap.put("key1", "value1");
+        hashmap.put("key1", "newValue");
+        assertEquals("newValue", hashmap.get("key1"));
+    }
+
+    // Edge case: Adding a large number of elements (for performance)
+    @Test
+    public void testLargeNumberOfElements() {
+        HashMap<String, String> hashmap = new HashMap<>();
+        for (int i = 0; i < 10000; i++) {
+            hashmap.put("key" + i, "value" + i);
+        }
+        assertEquals("The map should contain 10000 elements", 10000, hashmap.size());
+    }
+}
