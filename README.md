@@ -34,3 +34,17 @@ Weekly progress update meetings with mentor - Thursdays 2-2:30p via Microsoft Te
   Expected 4/10/25
 - [] Test that the program works with multiple users  
   Expected 5/1/25
+
+## Setup Instruction
+
+1. Make sure you have access to the OU DISC SMART misinformation repo
+2. Navigate to the repo page and click the green code button and copy the url
+3. Navigate to your IDE terminal and run 'git clone url' where url is the copied url from step 2
+4. Now in order to run the code a virtual environment will be needed and the libraries downloaded
+5. Navigate to the cloned repo and run 'python3 -m venv <name_of_virtual_environment>' this will create the virtual environment
+6. Run 'source <name_of_virtual_environment>/bin/activate' to activate the virtual environment.
+7. In VsCode you can see (name_of_virtual_environment) in the terminal which lets you know its activated.
+8. Then run 'pip install -r requirements.txt' or 'python -m pip install -r requirements.txt' which will download all the necessaary libraries.
+9. Lastly before running we will need to copy the environment variables, make a file named .env, then copy everything from the .env.example file into the .env file
+10. Now run 'cd src' to navigate to the src directory then run 'python api.py' to run the server, the server will take a while to startup
+11. -- currently getting error because no pickle file, emailing advisor about that
