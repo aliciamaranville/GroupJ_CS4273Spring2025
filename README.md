@@ -10,7 +10,7 @@ Jacob Wells - Sprint Master 4
 Thorpe Mayes - Quality Assurance
 
 ## Description
-SMART is a tool used to analyze the contents and metadata about tweets and display this information on a map. This map aids first responders in locating emergencies and staying updated on current events. There is a ML model that is used to classify the tweets as misinformation or not. This model gets updated as the user gives feedback through either labeling the tweet as misinformation or removing the label. This allows for the model to be tailored to what the user sees as misinformation.  
+SMART is a tool used to analyze the contents and metadata about tweets and display this information on a map to be able to track information in real time. This map has aided first responders in emergencies by being able to monitor real time data and has even been used during the presidential inauguration. The backend contains a ML model that is trained to classify tweets as misinformation or not. This model gets updated as the user gives feedback through either labeling the tweet as misinformation or removing the label. This allows for the model to be tailored to what the user sees as misinformation.  
 
 ## Technologies and Tools
 
