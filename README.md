@@ -59,5 +59,7 @@ Weekly progress update meetings with mentor - Thursdays 2-2:30p via Microsoft Te
 
 
 ## Requirements 
-- Having python downloaded and installed is neccessary to run the project see download instructions [here](https://www.python.org/about/gettingstarted/)
+- Having python 3.7+ downloaded and installed is neccessary to run the project see download instructions [here](https://www.python.org/about/gettingstarted/)
+- As well a working understanding of python and web frameworks for building API's will be necessary to understand the code for more information about FastAPI click [here](https://fastapi.tiangolo.com/)
+
 
