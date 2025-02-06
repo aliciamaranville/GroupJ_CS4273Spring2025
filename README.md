@@ -46,9 +46,10 @@ Weekly progress update meetings with mentor - Thursdays 2-2:30p via Microsoft Te
 8. In VsCode you can see (name_of_virtual_environment) in the terminal which lets you know its activated.
 9. Then run ```pip install -r requirements.txt``` or ```python -m pip install -r requirements.txt``` which will download all the necessaary libraries.
 10. Lastly before running we will need to copy the environment variables, make a file named .env, then copy everything from the .env.example file into the .env file
-11. Now run ```cd src``` to navigate to the src directory then run ```python api.py``` to run the server, the server will take a while to startup
-12. -- currently getting error because no pickle file, emailing advisor about that
-13. add pickle folder
+11. Now we will also need to create a folder named 'pickles' inside the SMARTMisinformation folder.
+12. Now run ```cd src``` to navigate to the src directory then run ```python api.py``` to run the server, the server will take a while to startup.
+13. Navigate to localhost:9090, and check that it says "Welcome to the tweet classification model"
+14. You're all set up!
 
 
 ## Table of Contents
