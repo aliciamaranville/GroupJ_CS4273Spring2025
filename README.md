@@ -48,3 +48,16 @@ Weekly progress update meetings with mentor - Thursdays 2-2:30p via Microsoft Te
 10. Lastly before running we will need to copy the environment variables, make a file named .env, then copy everything from the .env.example file into the .env file
 11. Now run ```cd src``` to navigate to the src directory then run ```python api.py``` to run the server, the server will take a while to startup
 12. -- currently getting error because no pickle file, emailing advisor about that
+13. add pickle folder
+
+
+## Table of Contents
+- Description
+- Technologies and Tools
+- Requirements
+- Setup Instructions
+
+
+## Requirements 
+- Having python downloaded and installed is neccessary to run the project see download instructions [here](https://www.python.org/about/gettingstarted/)
+
