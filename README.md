@@ -10,7 +10,7 @@ Jacob Wells - Sprint Master 4
 Thorpe Mayes - Quality Assurance
 
 ## Description
-SMART is a tool used to analyze the contents and metadata about tweets and display this information on a map to be able to track information in real time. This map has aided first responders in emergencies by being able to monitor real time data and has even been used during the presidential inauguration. The backend contains a ML model that is trained to classify tweets as misinformation or not. This model gets updated as the user gives feedback through either labeling the tweet as misinformation or removing the label. This allows for the model to be tailored to what the user sees as misinformation.  
+SMART is a tool used to analyze the contents and metadata about tweets and display this information on a map to be able to track information in real time. This map has aided first responders in emergencies by being able to monitor real time data and has even been used during the presidential inauguration. The repo is a microservice that contains a ML model that is trained to classify tweets as misinformation or not. This model gets updated as the user gives feedback through either labeling the tweet as misinformation or removing the label. This allows for the model to be tailored to what the user sees as misinformation.  
 Click [here](https://www.ou.edu/disc/initiatives/tools/smart) for a high level overview
 
 ## Technologies and Tools
@@ -63,5 +63,6 @@ Weekly progress update meetings with mentor - Thursdays 2-2:30p via Microsoft Te
 ## Requirements 
 - Having python 3.7+ downloaded and installed is neccessary to run the project see download instructions [here](https://www.python.org/about/gettingstarted/)
 - As well a working understanding of python and web frameworks for building API's will be necessary to understand the code for more information about FastAPI click [here](https://fastapi.tiangolo.com/)
+- An understanding of virtual environments in python see more information [here](https://docs.python.org/3/library/venv.html)
 
 
