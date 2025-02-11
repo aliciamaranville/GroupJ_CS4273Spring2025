@@ -1,0 +1,48 @@
+app:
+  regcred: regcred-ghcr-io-client
+
+  image:
+    repository: ghcr.io/ou-disc/smart-misinformation
+  
+  port: 9090
+  health: /
+  livenessProbe: |
+    tcpSocket:
+      port: 9090
+    initialDelaySeconds: 5
+    periodSeconds: 10
+  readinessProbe: |
+    tcpSocket:
+      port: 9090
+    initialDelaySeconds: 5
+    periodSeconds: 10
+
+  ingress:
+    enabled: true
+    url: misinformation.smart.disc.ourcloud.ou.edu
+
+  # give a startup time of 10 * 30 seconds == 5 minutes
+  # once startup complete will switch to liveness and readiness probes
+  startupProbe: |
+    tcpSocket:
+      port: 9090
+    failureThreshold: 30
+    periodSeconds: 10
+  
+  extraEnv: |
+    - name: HOSTNAME
+      value: 0.0.0.0
+    - name: PORT
+      value: "9090"
+    - name: DATA_PATH
+      value: ./data/
+    - name: PICKLE_PATH_LINUX
+      value: /app/model_linux.pkl
+  
+  requests:
+    cpu: 100m
+    memory: 500Mi
+
+  limits:
+    cpu: 6000m
+    memory: 12Gi

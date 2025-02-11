@@ -1,0 +1,8 @@
+.env
+*.pkl
+*.pickle
+__pycache__
+env
+pickles
+venv
+virtualenv
