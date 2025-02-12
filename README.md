@@ -61,7 +61,7 @@ Weekly progress update meetings with mentor - Thursdays 2-2:30p via Microsoft Te
 
 
 ## Requirements 
-- Having python 3.7 - 3.12 downloaded and installed is neccessary to run the project see download instructions [here](https://www.python.org/about/gettingstarted/)
+- Having python 3.10 downloaded and installed is neccessary to run the project see download instructions [here](https://www.python.org/about/gettingstarted/)
 - The project may not run with python 3.13+ since DistUtils is a necessary package but is not part of python 3.13 onwards.
 - As well a working understanding of python and web frameworks for building API's will be necessary to understand the code for more information about FastAPI click [here](https://fastapi.tiangolo.com/)
 - An understanding of virtual environments in python see more information [here](https://docs.python.org/3/library/venv.html)
